@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "306af7d3-084a-4505-ad30-fc2c745494f1",
+		"name": "it-word exercise intec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26320168"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"words\": [\n        {\n            \"word\": \"computer\",\n            \"translation\": \"computer\"\n        },\n        {\n            \"word\": \"internet\",\n            \"translation\": \"internet\"\n        },\n        {\n            \"word\": \"software\",\n            \"translation\": \"software\"\n        },\n        {\n            \"word\": \"hardware\",\n            \"translation\": \"hardware\"\n        },\n        {\n            \"word\": \"bestand\",\n            \"translation\": \"file\"\n        },\n        {\n            \"word\": \"programma\",\n            \"translation\": \"program\"\n        },\n        {\n            \"word\": \"server\",\n            \"translation\": \"server\"\n        },\n        {\n            \"word\": \"netwerk\",\n            \"translation\": \"network\"\n        },\n        {\n            \"word\": \"database\",\n            \"translation\": \"database\"\n        },\n        {\n            \"word\": \"website\",\n            \"translation\": \"website\"\n        },\n        {\n            \"word\": \"code\",\n            \"translation\": \"code\"\n        },\n        {\n            \"word\": \"programmeren\",\n            \"translation\": \"programming\"\n        },\n        {\n            \"word\": \"bug\",\n            \"translation\": \"bug\"\n        },\n        {\n            \"word\": \"debuggen\",\n            \"translation\": \"debugging\"\n        },\n        {\n            \"word\": \"encryptie\",\n            \"translation\": \"encryption\"\n        },\n        {\n            \"word\": \"decryptie\",\n            \"translation\": \"decryption\"\n        },\n        {\n            \"word\": \"interface\",\n            \"translation\": \"interface\"\n        },\n        {\n            \"word\": \"backup\",\n            \"translation\": \"backup\"\n        },\n        {\n            \"word\": \"firewall\",\n            \"translation\": \"firewall\"\n        },\n        {\n            \"word\": \"malware\",\n            \"translation\": \"malware\"\n        },\n        {\n            \"word\": \"spam\",\n            \"translation\": \"spam\"\n        },\n        {\n            \"word\": \"browser\",\n            \"translation\": \"browser\"\n        },\n        {\n            \"word\": \"cookies\",\n            \"translation\": \"cookies\"\n        },\n        {\n            \"word\": \"downloaden\",\n            \"translation\": \"downloading\"\n        },\n        {\n            \"word\": \"uploaden\",\n            \"translation\": \"uploading\"\n        },\n        {\n            \"word\": \"cloud\",\n            \"translation\": \"cloud\"\n        },\n        {\n            \"word\": \"artificiële intelligentie\",\n            \"translation\": \"artificial intelligence\"\n        },\n        {\n            \"word\": \"algoritme\",\n            \"translation\": \"algorithm\"\n        },\n        {\n            \"word\": \"analyse\",\n            \"translation\": \"analysis\"\n        },\n        {\n            \"word\": \"data\",\n            \"translation\": \"data\"\n        },\n        {\n            \"word\": \"machine learning\",\n            \"translation\": \"machine learning\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/words/createList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"words",
+						"createList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"word\": \"netwerk\",\n    \"translation\": \"network\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/words/create/one",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"words",
+						"create",
+						"one"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 32,\n    \"word\": \"netwerk\",\n    \"translation\": \"network\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/words/update/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"words",
+						"update",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 32\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/words/read/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"words",
+						"read",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 32\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/words/delete/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"words",
+						"delete",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/words/read/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"words",
+						"read",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
